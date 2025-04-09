@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramazon</title>
+
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title-header">
+                <h1><a href="index.html">RAMAZON</a></h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="produtos">
+                <div class="produto1">
+                    <h2>Mouse Attack Shark X11</h2>
+                    <div class="img-produto1">
+                        <img src="assets/attack-shark-x11.webp" alt="Foto Mouse Attack Shark X11"> <br>
+                    </div>
+                    <h1>R$ 240,90</h1>
+                    <div class="produto1-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>Com design ergonômico e precisão de 16000 DPI, o Mouse Attack Shark X11 é perfeito para gamers
+                        que
+                        buscam
+                        desempenho e conforto.</p>
+                </div>
+                <div class="produto2">
+                    <h2>Mouse Logitech MX Master 3S</h2>
+                    <div class="carousel">
+                        <button type="button" class="carousel-btn left" onclick="toggleCarousel('left')">
+                            <span class="material-icons">
+                                chevron_left
+                            </span>
+                        </button>
+                        <img id="produto2-img" src="assets/mxmaster.jpg" alt="Foto Mouse Logitech MX Master 3S">
+                        <video id="produto2-video" controls style="display: none;">
+                            <source src="assets/video-mxmaster.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="carousel-btn right" onclick="toggleCarousel('right')">
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </button>
+                    </div>
+                    <h1>R$ 657,90</h1>
+                    <div class="produto2-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>O Logitech MX Master 3S oferece uma experiência de uso fluida e silenciosa, com botões
+                        personalizáveis e
+                        uma roda de rolagem eletromagnética.</p>
+                </div>
+                <div class="produto3">
+                    <h2>Mouse Razer Viper V3 PRO</h2>
+                    <div class="img-produto3">
+                        <img src="assets/razer-viper-v3-pro.jpg" alt="Foto Mouse Razer Viper V3 PRO"> <br>
+                    </div>
+                    <h1>R$ 1897,70</h1>
+                    <div class="produto3-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>Com switches ópticos e sensor de 20000 DPI, o Razer Viper V3 PRO é a escolha ideal para
+                        profissionais
+                        de
+                        eSports que exigem precisão e velocidade.</p>
+                </div>
+            </div>
+
+            <div class="produtos">
+                <div class="produto1">
+                    <h2>Mouse Attack Shark X11</h2>
+                    <div class="img-produto1">
+                        <img src="assets/attack-shark-x11.webp" alt="Foto Mouse Attack Shark X11"> <br>
+                    </div>
+                    <h1>R$ 240,90</h1>
+                    <div class="produto1-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>Com design ergonômico e precisão de 16000 DPI, o Mouse Attack Shark X11 é perfeito para gamers
+                        que
+                        buscam
+                        desempenho e conforto.</p>
+                </div>
+                <div class="produto2">
+                    <h2>Mouse Logitech MX Master 3S</h2>
+                    <div class="carousel">
+                        <img id="produto2-img" src="assets/mxmaster.jpg" alt="Foto Mouse Logitech MX Master 3S">
+                    </div>
+                    <h1>R$ 657,90</h1>
+                    <div class="produto2-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>O Logitech MX Master 3S oferece uma experiência de uso fluida e silenciosa, com botões
+                        personalizáveis e
+                        uma roda de rolagem eletromagnética.</p>
+                </div>
+                <div class="produto3">
+                    <h2>Mouse Razer Viper V3 PRO</h2>
+                    <div class="img-produto3">
+                        <img src="assets/razer-viper-v3-pro.jpg" alt="Foto Mouse Razer Viper V3 PRO"> <br>
+                    </div>
+                    <h1>R$ 1897,70</h1>
+                    <div class="produto3-btns">
+                        <button type="button" class="btn-comprar">Comprar agora</button>
+                        <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                    <p>Com switches ópticos e sensor de 20000 DPI, o Razer Viper V3 PRO é a escolha ideal para
+                        profissionais
+                        de
+                        eSports que exigem precisão e velocidade.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Ramazon. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function toggleCarousel(direction) {
+            const img = document.getElementById('produto2-img');
+            const video = document.getElementById('produto2-video');
+            if (direction === 'left' || direction === 'right') {
+                if (img.style.display === 'none') {
+                    img.style.display = 'block';
+                    video.style.display = 'none';
+                } else {
+                    img.style.display = 'none';
+                    video.style.display = 'block';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

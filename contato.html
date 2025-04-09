@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="style/contato.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+</head>
+
+<body>  
+    <div class="container">
+        <div class="btn-voltar">
+            <a href="index.html"><button type="button">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>Voltar</button></a>
+        </div>
+
+        <div class="form">
+            <h1>Fale Conosco</h1>
+            <form action="">
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" pattern="^\(\d{2}\)\d{5}-\d{4}$" id="celular" name="celular">
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade: </label>
+                    <select name="cidade" id="cidade" required>
+                        <option value="" disabled selected>Selecione uma cidade</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="sjc">São José dos Campos</option>
+                        <option value="jacarei">Jacareí</option>
+                        <option value="taubate">Taubaté</option>
+                        <option value="guararema">Guararema</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-nasc">Data de Nascimento: </label>
+                    <input type="date" id="data-nasc" name="data-nasc" required>
+                </div>
+
+                <div class="form-group-radio">
+                    <label for="departamento">Departamento: </label>
+                    <div class="radio-group">
+                        <input type="radio" id="vendas" name="departamento" value="vendas" required> <label for="vendas">Dúvidas</label>
+                        <input type="radio" id="reclamacoes" name="departamento" value="reclamacoes" required> <label for="reclamacoes">Reclamações</label>
+                        <input type="radio" id="avaliacoes" name="departamento" value="avaliacoes" required> <label for="avaliacoes">Avaliações</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
